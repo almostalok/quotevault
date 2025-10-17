@@ -1,0 +1,220 @@
+# ==========================================
+# QuoteVault - Complete .gitignore
+# ==========================================
+
+# ==========================================
+# Node.js & NPM
+# ==========================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# ==========================================
+# Environment Variables
+# ==========================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+
+# ==========================================
+# Build Output
+# ==========================================
+dist/
+dist-ssr/
+build/
+*.local
+
+# ==========================================
+# Frontend (React/Vite)
+# ==========================================
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/build/
+frontend/.vite/
+frontend/.env
+frontend/.env.local
+frontend/.env.production
+frontend/.env.development
+
+# ==========================================
+# Backend (Express)
+# ==========================================
+backend/node_modules/
+backend/dist/
+backend/build/
+backend/.env
+backend/.env.local
+backend/.env.production
+backend/.env.development
+
+# ==========================================
+# Logs
+# ==========================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ==========================================
+# OS Generated Files
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# ==========================================
+# Editor & IDE
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# VSCode specific (optional - remove if you want to share settings)
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# ==========================================
+# Testing
+# ==========================================
+coverage/
+*.lcov
+.nyc_output/
+lib-cov/
+.grunt/
+.lock-wscript/
+
+# ==========================================
+# Temporary Files
+# ==========================================
+*.tmp
+*.temp
+tmp/
+temp/
+*.cache
+.cache/
+
+# ==========================================
+# Package Manager Locks (optional)
+# Uncomment if you want to ignore lock files
+# ==========================================
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# ==========================================
+# Build Tools
+# ==========================================
+.webpack/
+.rollup.cache/
+.parcel-cache/
+.next/
+.nuxt/
+.cache/
+.vuepress/dist
+.serverless/
+.fusebox/
+.dynamodb/
+.tern-port
+
+# ==========================================
+# Database
+# ==========================================
+# Uncomment if using actual database
+# *.sqlite
+# *.sqlite3
+# *.db
+
+# But keep our JSON database
+!backend/data/quotes.json
+
+# ==========================================
+# Backup Files
+# ==========================================
+*.bak
+*.backup
+*_backup
+*.old
+
+# ==========================================
+# Miscellaneous
+# ==========================================
+.sass-cache/
+connect.lock
+typings/
+.npm
+.eslintcache
+.stylelintcache
+.node_repl_history
+*.tgz
+.yarn-integrity
+.pnp.*
+.pnp.js
+
+# ==========================================
+# Documentation Build
+# ==========================================
+docs/_build/
+site/
+
+# ==========================================
+# Optional: Uncomment if needed
+# ==========================================
+# Dependency directories
+# jspm_packages/
+
+# TypeScript cache
+# *.tsbuildinfo
+
+# Optional npm cache directory
+# .npm
+
+# Optional eslint cache
+# .eslintcache
+
+# Microbundle cache
+# .rpt2_cache/
+# .rts2_cache_cjs/
+# .rts2_cache_es/
+# .rts2_cache_umd/
+
+# Optional REPL history
+# .node_repl_history
+
+# Output of 'npm pack'
+# *.tgz
+
+# Yarn Integrity file
+# .yarn-integrity
+
+# ==========================================
+# Custom Project Specific
+# ==========================================
+# Add any project-specific files or folders here
