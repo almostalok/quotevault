@@ -1,16 +1,44 @@
-# 💬 QuoteVault
-
 <div align="center">
 
-![QuoteVault Banner](https://img.shields.io/badge/QuoteVault-Inspirational%20Quotes%20API-blue?style=for-the-badge)
-[![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)](LICENSE)
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=QuoteVault&fontSize=72&fontColor=fff&animation=twinkling&fontAlignY=35&desc=Inspirational%20Quotes%20API%20%E2%80%94%20Free%20%26%20Open%20Source&descAlignY=60&descSize=20" width="100%"/>
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=6366F1&center=true&vCenter=true&multiline=true&repeat=true&width=700&height=80&lines=%22The+secret+of+getting+ahead+is+getting+started.%22;%22In+the+middle+of+difficulty+lies+opportunity.%22;%22It+always+seems+impossible+until+it%27s+done.%22;%22Strive+not+to+be+a+success%2C+but+rather+to+be+of+value.%22)](https://git.io/typing-svg)
+
+<br/>
+
+[![License](https://img.shields.io/badge/license-MIT-22c55e?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](LICENSE)
 [![Node.js](https://img.shields.io/badge/Node.js-v18+-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
 [![Express](https://img.shields.io/badge/Express-v4.x-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
 [![React](https://img.shields.io/badge/React-v19+-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org/)
+[![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 
-**A free, open-source REST API for inspirational quotes with a beautiful web interface**
+[![GitHub stars](https://img.shields.io/github/stars/almostalok/quotevault?style=social)](https://github.com/almostalok/quotevault/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/almostalok/quotevault?style=social)](https://github.com/almostalok/quotevault/network/members)
+[![GitHub issues](https://img.shields.io/github/issues/almostalok/quotevault?color=red&label=issues)](https://github.com/almostalok/quotevault/issues)
+[![GitHub last commit](https://img.shields.io/github/last-commit/almostalok/quotevault?color=blue)](https://github.com/almostalok/quotevault/commits)
 
-[Live Demo](#) • [API Docs](#api-documentation) • [Report Bug](#) • [Request Feature](#)
+<br/>
+
+> **A free, open-source REST API for inspirational quotes — no auth, no friction, just wisdom.**
+
+[🚀 Quick Start](#-getting-started) · [📚 API Docs](#-api-documentation) · [🐛 Report Bug](https://github.com/almostalok/quotevault/issues) · [✨ Request Feature](https://github.com/almostalok/quotevault/issues)
+
+</div>
+
+---
+
+## 💡 Featured Quote
+
+<div align="center">
+
+> *"The secret of getting ahead is getting started."*
+>
+> **— Mark Twain**
+
+*✨ Fetch a fresh one anytime:*
+```bash
+curl http://localhost:5000/api/quotes/random
+```
 
 </div>
 
@@ -18,94 +46,119 @@
 
 ## 📖 Table of Contents
 
-- [About The Project](#about-the-project)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-  - [Running the Application](#running-the-application)
-- [API Documentation](#api-documentation)
-  - [Endpoints](#endpoints)
-  - [Quick Start](#quick-start)
-  - [Code Examples](#code-examples)
-- [Integration Guide](#integration-guide)
-  - [Website Widget](#website-widget)
-  - [Discord Bot](#discord-bot)
-  - [Mobile Apps](#mobile-apps)
-  - [Command Line](#command-line)
-- [Rate Limiting](#rate-limiting)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+- [About The Project](#-about-the-project)
+- [Features](#-features)
+- [Tech Stack](#️-tech-stack)
+- [Architecture](#️-architecture)
+- [Getting Started](#-getting-started)
+- [API Documentation](#-api-documentation)
+- [Integration Guide](#-integration-guide)
+- [Rate Limiting](#️-rate-limiting)
+- [Project Structure](#-project-structure)
+- [Contributing](#-contributing)
+- [License](#-license)
+- [Contact](#-contact)
 
 ---
 
 ## 🎯 About The Project
 
-**QuoteVault** is a full-stack web application that provides a free, easy-to-use REST API for accessing inspirational quotes. Whether you're building a motivational app, a Discord bot, a website widget, or just need some inspiration in your terminal, QuoteVault has you covered with 100+ carefully curated quotes from world-renowned authors and thinkers.
+**QuoteVault** is a full-stack application delivering a **free, zero-auth REST API** for inspirational quotes paired with a beautiful web interface. Whether you're building a motivational app, a Discord bot, a website widget, or just want some wisdom in your terminal — QuoteVault has you covered with **100+ curated quotes** from world-renowned authors and thinkers.
 
 ### Why QuoteVault?
 
-- 🔓 **No Authentication Required** - Start using immediately, no API keys needed
-- 🌐 **CORS Enabled** - Access from any domain or application
-- 🚀 **Lightning Fast** - Built with Express.js for optimal performance
-- 🎨 **Beautiful Web Interface** - Manage and browse quotes with an intuitive UI
-- 🛡️ **Rate Limited** - Protected against abuse while remaining generous for normal use
-- 📚 **100+ Quotes** - Diverse collection from famous authors, entrepreneurs, and leaders
-- 💻 **Developer Friendly** - Simple JSON responses, clear documentation, and examples
+| | |
+|---|---|
+| 🔓 **No Auth Required** | Start immediately — zero API keys or sign-ups |
+| 🌐 **CORS Enabled** | Access from any domain, app, or device |
+| ⚡ **Lightning Fast** | Powered by Express.js for sub-millisecond responses |
+| 🎨 **Beautiful UI** | Glassmorphism web interface included |
+| 🛡️ **Rate Limited** | Generous limits that prevent abuse |
+| 📚 **100+ Quotes** | Authors, entrepreneurs, scientists, and leaders |
+| 💻 **Developer Friendly** | Clean JSON, clear docs, ready-to-copy examples |
 
 ### Perfect For
 
-- 🤖 Building bots (Discord, Slack, Telegram)
-- 📱 Mobile app development
-- 🌐 Website widgets and quote-of-the-day features
-- 🎓 Learning REST API integration
-- 📧 Email automation and newsletters
-- 🖥️ Terminal customization
-- 🎨 Creative projects and hackathons
+<div align="center">
+
+`🤖 Discord / Slack / Telegram Bots` &nbsp; `📱 Mobile Apps` &nbsp; `🌐 Website Widgets`
+
+`🎓 Learning REST APIs` &nbsp; `📧 Email Newsletters` &nbsp; `🖥️ Terminal Customization` &nbsp; `🎨 Hackathons`
+
+</div>
 
 ---
 
 ## ✨ Features
 
-### API Features
-- ✅ Get random inspirational quotes
-- ✅ Retrieve all quotes from the database
-- ✅ Add new quotes via POST requests
-- ✅ RESTful API design
-- ✅ JSON response format
-- ✅ Rate limiting for security
-- ✅ CORS enabled for cross-origin requests
+<div align="center">
 
-### Web Interface Features
-- ✅ View random quotes with one click
-- ✅ Browse all quotes in an organized list
-- ✅ Add new quotes through a user-friendly form
-- ✅ Interactive API documentation
-- ✅ Responsive design for all devices
-- ✅ Modern, glassmorphism UI design
-- ✅ Real-time API testing
+| API | Web Interface |
+|-----|---------------|
+| ✅ Random inspirational quotes | ✅ One-click quote refresh |
+| ✅ Retrieve the full quote library | ✅ Paginated quote browser |
+| ✅ Add quotes via POST | ✅ User-friendly "Add Quote" form |
+| ✅ RESTful JSON responses | ✅ Interactive API documentation |
+| ✅ Rate limiting & security | ✅ Glassmorphism UI design |
+| ✅ CORS for cross-origin access | ✅ Fully responsive layout |
+
+</div>
 
 ---
 
 ## 🛠️ Tech Stack
 
-### Backend
-- **Node.js** - JavaScript runtime
-- **Express.js** - Web application framework
-- **express-rate-limit** - Rate limiting middleware
-- **CORS** - Cross-origin resource sharing
+<div align="center">
 
-### Frontend
-- **React 19** - UI library
-- **React Router** - Client-side routing
-- **Vite** - Build tool and dev server
-- **CSS-in-JS** - Inline styling
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![JSON](https://img.shields.io/badge/JSON_Storage-lightgrey?style=flat-square&logo=json&logoColor=black)
 
-### Database
-- **JSON File Storage** - Simple, lightweight data persistence
+</div>
+
+| Layer | Technology | Purpose |
+|-------|-----------|---------|
+| Runtime | **Node.js v18+** | JavaScript server runtime |
+| Framework | **Express.js v4** | HTTP routing & middleware |
+| Rate Limiting | **express-rate-limit** | Abuse prevention |
+| Frontend | **React 19** | Reactive UI components |
+| Bundler | **Vite** | Lightning-fast dev & build |
+| Routing | **React Router** | Client-side navigation |
+| Database | **JSON File** | Lightweight data persistence |
+
+---
+
+## 🏗️ Architecture
+
+```mermaid
+flowchart LR
+    subgraph Client
+        A[🌐 Browser / App]
+    end
+
+    subgraph Frontend["Frontend  (React + Vite · :5173)"]
+        B[Random Quote Page]
+        C[All Quotes Page]
+        D[Add Quote Page]
+        E[API Docs Page]
+    end
+
+    subgraph Backend["Backend  (Express · :5000)"]
+        F[Rate Limiter]
+        G[CORS Middleware]
+        H[Quote Router]
+        I[Quote Controller]
+        J[(quotes.json)]
+    end
+
+    A -->|HTTP| B & C & D & E
+    B & C & D -->|fetch| F
+    F --> G --> H --> I --> J
+    J -->|JSON| I --> H --> A
+```
 
 ---
 
@@ -278,83 +331,72 @@ Content-Type: application/json
 
 ### Code Examples
 
-#### JavaScript (Browser/Node.js)
+<details>
+<summary>JavaScript / Node.js</summary>
+
 ```javascript
 // Get random quote
 fetch('http://localhost:5000/api/quotes/random')
-  .then(response => response.json())
-  .then(quote => {
-    console.log(`"${quote.text}" - ${quote.author}`);
-  })
-  .catch(error => console.error('Error:', error));
+  .then(res => res.json())
+  .then(quote => console.log(`"${quote.text}" — ${quote.author}`));
 
-// Using async/await
-async function getRandomQuote() {
-  try {
-    const response = await fetch('http://localhost:5000/api/quotes/random');
-    const quote = await response.json();
-    return quote;
-  } catch (error) {
-    console.error('Error:', error);
-  }
-}
+// async/await
+const response = await fetch('http://localhost:5000/api/quotes/random');
+const quote    = await response.json();
 ```
+</details>
 
-#### Python
+<details>
+<summary>Python</summary>
+
 ```python
 import requests
 
-# Get random quote
-response = requests.get('http://localhost:5000/api/quotes/random')
-quote = response.json()
+quote = requests.get('http://localhost:5000/api/quotes/random').json()
+print(f'"{quote["text"]}" — {quote["author"]}')
 
-print(f'"{quote["text"]}" - {quote["author"]}')
-
-# Add new quote
-new_quote = {
+# Add a new quote
+requests.post('http://localhost:5000/api/quotes', json={
     "text": "Your quote here",
     "author": "Your Name"
-}
-response = requests.post(
-    'http://localhost:5000/api/quotes',
-    json=new_quote
-)
-print(response.json())
+})
 ```
+</details>
 
-#### cURL
+<details>
+<summary>cURL</summary>
+
 ```bash
-# Get random quote
+# Random quote
 curl http://localhost:5000/api/quotes/random
 
-# Get all quotes
+# All quotes
 curl http://localhost:5000/api/quotes
 
-# Add new quote
+# Add a quote
 curl -X POST http://localhost:5000/api/quotes \
   -H "Content-Type: application/json" \
   -d '{"text":"Your quote","author":"Your Name"}'
 ```
+</details>
 
-#### jQuery
+<details>
+<summary>jQuery</summary>
+
 ```javascript
-$.ajax({
-  url: 'http://localhost:5000/api/quotes/random',
-  method: 'GET',
-  success: function(quote) {
-    $('#quote').text(quote.text);
-    $('#author').text(quote.author);
-  }
+$.getJSON('http://localhost:5000/api/quotes/random', quote => {
+  $('#quote').text(quote.text);
+  $('#author').text(quote.author);
 });
 ```
+</details>
 
 ---
 
 ## 🔌 Integration Guide
 
-### Website Widget
-
-Add a "Quote of the Day" to your website:
+<details>
+<summary>🌐 <strong>Website Widget</strong> — Add a "Quote of the Day" to any page</summary>
 
 ```html
 <!DOCTYPE html>
@@ -370,47 +412,35 @@ Add a "Quote of the Day" to your website:
       border-radius: 10px;
       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     }
-    .quote-text {
-      font-size: 1.5rem;
-      font-style: italic;
-      margin-bottom: 15px;
-    }
-    .quote-author {
-      font-size: 1.2rem;
-      color: #666;
-      text-align: right;
-    }
+    .quote-text   { font-size: 1.5rem; font-style: italic; margin-bottom: 15px; }
+    .quote-author { font-size: 1.2rem; color: #666; text-align: right; }
   </style>
 </head>
 <body>
   <div class="quote-container">
-    <div class="quote-text" id="quote-text">Loading...</div>
+    <div class="quote-text"   id="quote-text">Loading...</div>
     <div class="quote-author" id="quote-author"></div>
   </div>
-
   <script>
     async function loadQuote() {
       try {
         const response = await fetch('http://localhost:5000/api/quotes/random');
         const quote = await response.json();
-        
-        document.getElementById('quote-text').textContent = `"${quote.text}"`;
+        document.getElementById('quote-text').textContent   = `"${quote.text}"`;
         document.getElementById('quote-author').textContent = `— ${quote.author}`;
-      } catch (error) {
+      } catch {
         document.getElementById('quote-text').textContent = 'Failed to load quote';
       }
     }
-    
-    // Load quote on page load
     loadQuote();
   </script>
 </body>
 </html>
 ```
+</details>
 
-### Discord Bot
-
-Create a quote bot for Discord using discord.js:
+<details>
+<summary>🤖 <strong>Discord Bot</strong> — Reply to <code>!quote</code> with inspiration</summary>
 
 ```javascript
 const { Client, GatewayIntentBits } = require('discord.js');
@@ -420,7 +450,7 @@ const client = new Client({
   intents: [
     GatewayIntentBits.Guilds,
     GatewayIntentBits.GuildMessages,
-    GatewayIntentBits.MessageContent
+    GatewayIntentBits.MessageContent,
   ]
 });
 
@@ -429,9 +459,8 @@ client.on('messageCreate', async (message) => {
     try {
       const response = await fetch('http://localhost:5000/api/quotes/random');
       const quote = await response.json();
-      
       message.reply(`"${quote.text}" - **${quote.author}**`);
-    } catch (error) {
+    } catch {
       message.reply('Failed to fetch quote. Please try again!');
     }
   }
@@ -439,10 +468,11 @@ client.on('messageCreate', async (message) => {
 
 client.login('YOUR_BOT_TOKEN');
 ```
+</details>
 
-### Mobile Apps
+<details>
+<summary>📱 <strong>React Native</strong> — Mobile quote screen</summary>
 
-#### React Native
 ```javascript
 import React, { useState, useEffect } from 'react';
 import { View, Text, Button, StyleSheet } from 'react-native';
@@ -455,8 +485,7 @@ const QuoteScreen = () => {
     setLoading(true);
     try {
       const response = await fetch('http://localhost:5000/api/quotes/random');
-      const data = await response.json();
-      setQuote(data);
+      setQuote(await response.json());
     } catch (error) {
       console.error('Error fetching quote:', error);
     } finally {
@@ -464,9 +493,7 @@ const QuoteScreen = () => {
     }
   };
 
-  useEffect(() => {
-    fetchQuote();
-  }, []);
+  useEffect(() => { fetchQuote(); }, []);
 
   return (
     <View style={styles.container}>
@@ -476,39 +503,24 @@ const QuoteScreen = () => {
           <Text style={styles.authorText}>— {quote.author}</Text>
         </>
       )}
-      <Button 
-        title={loading ? "Loading..." : "Get New Quote"} 
-        onPress={fetchQuote}
-        disabled={loading}
-      />
+      <Button title={loading ? 'Loading...' : 'Get New Quote'} onPress={fetchQuote} disabled={loading} />
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    padding: 20,
-  },
-  quoteText: {
-    fontSize: 20,
-    fontStyle: 'italic',
-    marginBottom: 15,
-    textAlign: 'center',
-  },
-  authorText: {
-    fontSize: 16,
-    color: '#666',
-    marginBottom: 30,
-  },
+  container:  { flex: 1, justifyContent: 'center', alignItems: 'center', padding: 20 },
+  quoteText:  { fontSize: 20, fontStyle: 'italic', marginBottom: 15, textAlign: 'center' },
+  authorText: { fontSize: 16, color: '#666', marginBottom: 30 },
 });
 
 export default QuoteScreen;
 ```
+</details>
 
-#### Flutter
+<details>
+<summary>🐦 <strong>Flutter</strong> — Dart / Flutter widget</summary>
+
 ```dart
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
@@ -521,23 +533,16 @@ class QuoteScreen extends StatefulWidget {
 
 class _QuoteScreenState extends State<QuoteScreen> {
   String quoteText = 'Loading...';
-  String author = '';
-  bool isLoading = false;
+  String author    = '';
+  bool isLoading   = false;
 
   Future<void> fetchQuote() async {
     setState(() => isLoading = true);
-    
     try {
-      final response = await http.get(
-        Uri.parse('http://localhost:5000/api/quotes/random')
-      );
-      
+      final response = await http.get(Uri.parse('http://localhost:5000/api/quotes/random'));
       if (response.statusCode == 200) {
         final quote = json.decode(response.body);
-        setState(() {
-          quoteText = quote['text'];
-          author = quote['author'];
-        });
+        setState(() { quoteText = quote['text']; author = quote['author']; });
       }
     } catch (e) {
       print('Error: $e');
@@ -547,10 +552,7 @@ class _QuoteScreenState extends State<QuoteScreen> {
   }
 
   @override
-  void initState() {
-    super.initState();
-    fetchQuote();
-  }
+  void initState() { super.initState(); fetchQuote(); }
 
   @override
   Widget build(BuildContext context) {
@@ -561,21 +563,11 @@ class _QuoteScreenState extends State<QuoteScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
-              '"$quoteText"',
-              style: TextStyle(fontSize: 20, fontStyle: FontStyle.italic),
-              textAlign: TextAlign.center,
-            ),
+            Text('"$quoteText"', style: TextStyle(fontSize: 20, fontStyle: FontStyle.italic), textAlign: TextAlign.center),
             SizedBox(height: 15),
-            Text(
-              '— $author',
-              style: TextStyle(fontSize: 16, color: Colors.grey),
-            ),
+            Text('— $author', style: TextStyle(fontSize: 16, color: Colors.grey)),
             SizedBox(height: 30),
-            ElevatedButton(
-              onPressed: isLoading ? null : fetchQuote,
-              child: Text(isLoading ? 'Loading...' : 'Get New Quote'),
-            ),
+            ElevatedButton(onPressed: isLoading ? null : fetchQuote, child: Text(isLoading ? 'Loading...' : 'Get New Quote')),
           ],
         ),
       ),
@@ -583,38 +575,31 @@ class _QuoteScreenState extends State<QuoteScreen> {
   }
 }
 ```
+</details>
 
-### Command Line
+<details>
+<summary>🖥️ <strong>Command Line</strong> — Daily wisdom in your terminal</summary>
 
-Add a quote to your terminal startup (`.bashrc` or `.zshrc`):
+Add to `~/.bashrc` or `~/.zshrc`:
 
 ```bash
-# Add to ~/.bashrc or ~/.zshrc
-echo ""
 echo "💭 Quote of the Day:"
 curl -s http://localhost:5000/api/quotes/random | \
   python3 -c "import sys, json; q=json.load(sys.stdin); print(f'\033[1;36m\"{q[\"text\"]}\"\033[0m\n\033[0;33m— {q[\"author\"]}\033[0m')"
-echo ""
 ```
 
-Or create a simple quote command:
+Or install a standalone `quote` command:
 
 ```bash
-# Save as ~/bin/quote
+# Save as ~/bin/quote, then: chmod +x ~/bin/quote
 #!/bin/bash
 curl -s http://localhost:5000/api/quotes/random | python3 -c "
 import sys, json
 quote = json.load(sys.stdin)
-print(f'\033[1;36m\"{quote[\"text\"]}\"\033[0m')
-print(f'\033[0;33m— {quote[\"author\"]}\033[0m')
+print(f'\033[1;36m\"{quote[\"text\"]}\"\033[0m\n\033[0;33m— {quote[\"author\"]}\033[0m')
 "
-
-# Make it executable
-chmod +x ~/bin/quote
-
-# Use it
-quote
 ```
+</details>
 
 ---
 
@@ -710,70 +695,79 @@ quotevault/
 
 ## 🤝 Contributing
 
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. **Any contribution you make is warmly welcomed!** 🙌
 
 ### How to Contribute
 
-1. **Fork the Project**
-2. **Create your Feature Branch**
-   ```bash
-   git checkout -b feature/AmazingFeature
-   ```
-3. **Commit your Changes**
-   ```bash
-   git commit -m 'Add some AmazingFeature'
-   ```
-4. **Push to the Branch**
-   ```bash
-   git push origin feature/AmazingFeature
-   ```
-5. **Open a Pull Request**
+```bash
+# 1 · Fork the repo, then clone your fork
+git clone https://github.com/YOUR_USERNAME/quotevault.git
 
-### Adding Quotes
+# 2 · Create a feature branch
+git checkout -b feature/amazing-feature
 
-Want to contribute quotes? Either:
-- Use the web interface at `/add-quote`
-- Submit a PR with updates to `backend/data/quotes.json`
-- Use the POST API endpoint
+# 3 · Make your changes, then commit
+git commit -m "feat: add amazing feature"
+
+# 4 · Push and open a Pull Request
+git push origin feature/amazing-feature
+```
+
+### Ways to Contribute
+
+| Type | How |
+|------|-----|
+| 📝 **Add Quotes** | Web UI at `/add-quote`, or PR to `backend/data/quotes.json`, or POST to the API |
+| 🐛 **Fix Bugs** | Open an issue first, then submit a PR |
+| ✨ **New Features** | Open a feature-request issue to discuss first |
+| 📖 **Docs** | Improve examples, fix typos, add translations |
+| 🎨 **UI/UX** | Enhance the React frontend design |
 
 ### Guidelines
 
-- Ensure quotes are inspirational and appropriate
-- Include proper attribution to the author
-- Test your changes before submitting
+- Quotes should be inspirational and appropriately attributed — verify the source before submitting (a quick search for `"quote text" + author name` works well)
 - Follow the existing code style
-- Update documentation if needed
+- Test your changes before submitting
+- Update relevant documentation
 
 ---
 
 ## 📄 License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the **MIT License** — see [`LICENSE`](LICENSE) for full details.
 
 ---
 
 ## 📧 Contact
 
-Your Name - [@yourusername](https://twitter.com/yourusername)
+Have a question or idea? [Open an issue](https://github.com/almostalok/quotevault/issues) — contributions and feedback are always welcome.
 
-Project Link: [https://github.com/yourusername/quotevault](https://github.com/yourusername/quotevault)
+Project Link: [https://github.com/almostalok/quotevault](https://github.com/almostalok/quotevault)
 
 ---
 
 ## 🙏 Acknowledgments
 
-- [Express.js](https://expressjs.com/) - Fast, unopinionated web framework
-- [React](https://reactjs.org/) - A JavaScript library for building user interfaces
-- [Vite](https://vitejs.dev/) - Next generation frontend tooling
-- [express-rate-limit](https://github.com/nfriedly/express-rate-limit) - Rate limiting middleware
-- All the amazing authors whose quotes inspire us daily
+- [Express.js](https://expressjs.com/) — Fast, unopinionated web framework
+- [React](https://reactjs.org/) — A JavaScript library for building user interfaces
+- [Vite](https://vitejs.dev/) — Next-generation frontend tooling
+- [express-rate-limit](https://github.com/nfriedly/express-rate-limit) — Rate-limiting middleware
+- [DenverCoder1/readme-typing-svg](https://github.com/DenverCoder1/readme-typing-svg) — Animated typing SVG
+- [kyechan99/capsule-render](https://github.com/kyechan99/capsule-render) — Dynamic header render
+- All the inspiring authors whose wisdom powers QuoteVault ✨
 
 ---
 
 <div align="center">
 
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" width="100%"/>
+
 **Made with ❤️ by developers, for developers**
 
-⭐ Star this repo if you find it helpful!
+[![⭐ Star this repo](https://img.shields.io/github/stars/almostalok/quotevault?style=social)](https://github.com/almostalok/quotevault)
+&nbsp;
+[![🍴 Fork it](https://img.shields.io/github/forks/almostalok/quotevault?style=social)](https://github.com/almostalok/quotevault/fork)
+
+*If QuoteVault sparked a little inspiration in your day, consider leaving a ⭐ — it means the world!*
 
 </div>
