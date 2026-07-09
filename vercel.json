@@ -10,7 +10,7 @@
     },
     "rewrites": [
         {
-            "source": "/(.*)",
+            "source": "/server.js",
             "destination": {
                 "type": "service",
                 "service": "backend"
